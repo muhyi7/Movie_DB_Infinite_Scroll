@@ -33,10 +33,10 @@ public class Movie {
 	private String releaseDate;
 
 	@SerializedName("popularity")
-	private Object popularity;
+	private double popularity;
 
 	@SerializedName("vote_average")
-	private Object voteAverage;
+	private double voteAverage;
 
 	@SerializedName("id")
 	private int id;
@@ -47,56 +47,112 @@ public class Movie {
 	@SerializedName("vote_count")
 	private int voteCount;
 
+	public void setOverview(String overview){
+		this.overview = overview;
+	}
+
 	public String getOverview(){
 		return overview;
+	}
+
+	public void setOriginalLanguage(String originalLanguage){
+		this.originalLanguage = originalLanguage;
 	}
 
 	public String getOriginalLanguage(){
 		return originalLanguage;
 	}
 
+	public void setOriginalTitle(String originalTitle){
+		this.originalTitle = originalTitle;
+	}
+
 	public String getOriginalTitle(){
 		return originalTitle;
+	}
+
+	public void setVideo(boolean video){
+		this.video = video;
 	}
 
 	public boolean isVideo(){
 		return video;
 	}
 
+	public void setTitle(String title){
+		this.title = title;
+	}
+
 	public String getTitle(){
 		return title;
+	}
+
+	public void setGenreIds(List<Integer> genreIds){
+		this.genreIds = genreIds;
 	}
 
 	public List<Integer> getGenreIds(){
 		return genreIds;
 	}
 
+	public void setPosterPath(String posterPath){
+		this.posterPath = posterPath;
+	}
+
 	public String getPosterPath(){
 		return posterPath;
+	}
+
+	public void setBackdropPath(String backdropPath){
+		this.backdropPath = backdropPath;
 	}
 
 	public String getBackdropPath(){
 		return backdropPath;
 	}
 
+	public void setReleaseDate(String releaseDate){
+		this.releaseDate = releaseDate;
+	}
+
 	public String getReleaseDate(){
 		return releaseDate;
 	}
 
-	public Object getPopularity(){
+	public void setPopularity(double popularity){
+		this.popularity = popularity;
+	}
+
+	public double getPopularity(){
 		return popularity;
 	}
 
-	public Object getVoteAverage(){
+	public void setVoteAverage(double voteAverage){
+		this.voteAverage = voteAverage;
+	}
+
+	public double getVoteAverage(){
 		return voteAverage;
+	}
+
+	public void setId(int id){
+		this.id = id;
 	}
 
 	public int getId(){
 		return id;
 	}
 
+	public void setAdult(boolean adult){
+		this.adult = adult;
+	}
+
 	public boolean isAdult(){
 		return adult;
+	}
+
+	public void setVoteCount(int voteCount){
+		this.voteCount = voteCount;
 	}
 
 	public int getVoteCount(){
